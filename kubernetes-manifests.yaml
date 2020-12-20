@@ -33,7 +33,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/emailservice:v0.2.1
+        image: 10.60.38.173:5001/microservices-demo/emailservice
         ports:
         - containerPort: 8080
         env:
@@ -88,7 +88,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: gcr.io/google-samples/microservices-demo/checkoutservice:v0.2.1
+          image: 10.60.38.173:5001/microservices-demo/checkoutservice
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -157,7 +157,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/recommendationservice:v0.2.1
+        image: 10.60.38.173:5001/microservices-demo/recommendationservice
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -218,7 +218,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: gcr.io/google-samples/microservices-demo/frontend:v0.2.1
+          image: 10.60.38.173:5001/microservices-demo/frontend
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -313,7 +313,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/paymentservice:v0.2.1
+        image: 10.60.38.173:5001/microservices-demo/paymentservice
         ports:
         - containerPort: 50051
         env:
@@ -363,7 +363,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/productcatalogservice:v0.2.1
+        image: 10.60.38.173:5001/microservices-demo/productcatalogservice
         ports:
         - containerPort: 3550
         env:
@@ -421,7 +421,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/cartservice:v0.2.1
+        image: 10.60.38.173:5001/microservices-demo/cartservice
         ports:
         - containerPort: 7070
         env:
@@ -482,7 +482,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: main
-        image: gcr.io/google-samples/microservices-demo/loadgenerator:v0.2.1
+        image: 10.60.38.173:5001/microservices-demo/loadgenerator
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -513,7 +513,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/currencyservice:v0.2.1
+        image: 10.60.38.173:5001/microservices-demo/currencyservice
         ports:
         - name: grpc
           containerPort: 7000
@@ -568,7 +568,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/shippingservice:v0.2.1
+        image: 10.60.38.173:5001/microservices-demo/shippingservice
         ports:
         - containerPort: 50051
         env:
@@ -680,7 +680,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/adservice:v0.2.1
+        image: 10.60.38.173:5001/microservices-demo/adservice
         ports:
         - containerPort: 9555
         env:
